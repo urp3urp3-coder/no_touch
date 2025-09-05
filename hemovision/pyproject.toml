@@ -1,0 +1,30 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hemovision"
+version = "0.1.0"
+description = "Modular multimodal pipeline for conjunctiva & nail-based hemoglobin/anemia prediction"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name="Your Name", email="you@example.com"}]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scikit-image",
+    "matplotlib",
+    "tqdm",
+    "joblib",
+    "pydantic>=2",
+    "omegaconf",
+]
+
+[project.optional-dependencies]
+torch = ["torch", "torchvision", "torchaudio"]
+dev = ["pytest", "flake8", "mypy", "pre-commit"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

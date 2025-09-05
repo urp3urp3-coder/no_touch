@@ -1,0 +1,11 @@
+
+numpy
+pandas
+scikit-learn
+scikit-image
+matplotlib
+tqdm
+joblib
+pydantic>=2
+omegaconf
+# torch==2.*  # 게이팅 MLP 사용 시 설치
